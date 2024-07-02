@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nitya Shukla</title>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="myname fade-in-text">Nitya</h1>
+            <ul id="sidemenu">
+                <li class="fade-in-text"><a href="#header">Home</a></li>
+                <li class="fade-in-text"><a href="#about">About</a></li>
+                <li class="fade-in-text"><a href="#Skills">Skills</a></li>
+                <li class="fade-in-text"><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <img src="Untitled2.png" class="fade-in-text">
+            <h2 class="fade-in-text">Hi, I am Nitya Shukla from India and I am a Software Developer.</h2>  
+        </div>
+    </div>
+</div>
+    <!-----------------about------------------------>
+<div id="about">
+    <div class="container">
+        <h2 class="sub-title fade-in-text">About Me</h2>
+        <div class="sticky-note" contenteditable="false">
+            <h1 class="fade-in-text">Hobbies</h1>
+            <h2 class="fade-in-text">Painting <br> Playing guitar <br> Swimming <br>Writing</h2>
+        </div>
+        <div class="sticky-note" contenteditable="false">
+            <h1 class="fade-in-text">Background</h1>
+            <h2 class="fade-in-text">I was born in MP,India. <br> i completed my 12th grade from Little World School,Jabalpur.</h2>
+        </div>
+        <div class="sticky-note first" contenteditable="false">
+            <h1 class="fade-in-text">Education</h1>
+            <h2 class="fade-in-text">I am an undergraduate student currently pursuing BTech from Gyan Ganga Institute of Technology and Sciences.</h2>
+        </div>
+    </div>
+</div>
+<!---------------skills---------------------->
+<div id="Skills">
+    <div class="container">
+        <h2 class="sub-title2 fade-in-text">Skills</h2>
+        <div class="tree fade-in-text">
+            <div class="branch left">
+                <span class="p1 fade-in-text">Data Structures <br> and Algorithms</span>
+            </div>
+            <div class="branch right">
+                <span class="p2 fade-in-text">C++</span>
+            </div>
+            <div class="branch left">
+                <span class="p3 fade-in-text">HTML</span>
+            </div>
+            <div class="branch right">
+                <span class="p4 fade-in-text">CSS</span>
+            </div>
+            <div class="branch left">
+                <span class="p5 fade-in-text">Javascript</span>
+            </div>
+            <div class="branch right">
+                <span class="p6 fade-in-text">Python</span>
+            </div>
+            <div class="branch left">
+                <span class="p7 fade-in-text">MySQL</span>
+            </div>
+        </div>
+        <div class="bulb-container fade-in-text">
+            <img id="bulb" src="bulb-off.png" alt="Bulb" />
+        </div>
+        </div>
+    </div>
+</div>
+<!--------------------CONTACT-------------------->
+<div id="contact">
+    <div class="container">
+        <h2 class="sub-title3 fade-in-text">Contact Me</h2>
+    </div>
+    <div class="box">
+        <div class="row">
+            <div class="contact-left">
+                <p class="fade-in-text"><i class="fa-solid fa-envelope"></i> nityashukla444@gmail.com</p>
+                <p class="fade-in-text"><i class="fa-solid fa-phone"></i> +91-7803955902</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61551929217752" class="fade-in-text"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/nitya-shukla-792700254/" class="fade-in-text"><i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/Nitya-Shukla" class="fade-in-text"><i class="fa-brands fa-github"></i> </a>
+                </div>
+                <a href="nitya_resume2-1.pdf" class="btn btn2 fade-in-text">Download Resume</a>
+            </div>
+            <div class="contact-right fade-in-text">
+                <form action="/submit" method="post">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
